@@ -1,0 +1,47 @@
+2026-04-02T12:11:02: PM2 log: ===============================================================================
+2026-04-02T12:11:02: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-04-02T12:11:02: PM2 log: Time                 : Thu Apr 02 2026 12:11:02 GMT+0800 (China Standard Time)
+2026-04-02T12:11:02: PM2 log: PM2 version          : 5.4.3
+2026-04-02T12:11:02: PM2 log: Node.js version      : 22.17.1
+2026-04-02T12:11:02: PM2 log: Current arch         : arm64
+2026-04-02T12:11:02: PM2 log: PM2 home             : /root/.pm2
+2026-04-02T12:11:02: PM2 log: PM2 PID file         : /root/.pm2/pm2.pid
+2026-04-02T12:11:02: PM2 log: RPC socket file      : /root/.pm2/rpc.sock
+2026-04-02T12:11:02: PM2 log: BUS socket file      : /root/.pm2/pub.sock
+2026-04-02T12:11:02: PM2 log: Application log path : /root/.pm2/logs
+2026-04-02T12:11:02: PM2 log: Worker Interval      : 30000
+2026-04-02T12:11:02: PM2 log: Process dump file    : /root/.pm2/dump.pm2
+2026-04-02T12:11:02: PM2 log: Concurrent actions   : 2
+2026-04-02T12:11:02: PM2 log: SIGTERM timeout      : 1600
+2026-04-02T12:11:02: PM2 log: ===============================================================================
+2026-04-02T12:11:02: PM2 error: Error: EINVAL: invalid argument, chmod '/root/.pm2/pub.sock'
+2026-04-02T12:11:02: PM2 error: Error: EINVAL: invalid argument, chmod '/root/.pm2/rpc.sock'
+2026-04-02T12:11:12: PM2 log: ===============================================================================
+2026-04-02T12:11:12: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2026-04-02T12:11:12: PM2 log: Time                 : Thu Apr 02 2026 12:11:12 GMT+0800 (China Standard Time)
+2026-04-02T12:11:12: PM2 log: PM2 version          : 5.4.3
+2026-04-02T12:11:12: PM2 log: Node.js version      : 22.17.1
+2026-04-02T12:11:12: PM2 log: Current arch         : arm64
+2026-04-02T12:11:12: PM2 log: PM2 home             : /root/.pm2
+2026-04-02T12:11:12: PM2 log: PM2 PID file         : /root/.pm2/pm2.pid
+2026-04-02T12:11:12: PM2 log: RPC socket file      : /root/.pm2/rpc.sock
+2026-04-02T12:11:12: PM2 log: BUS socket file      : /root/.pm2/pub.sock
+2026-04-02T12:11:12: PM2 log: Application log path : /root/.pm2/logs
+2026-04-02T12:11:12: PM2 log: Worker Interval      : 30000
+2026-04-02T12:11:12: PM2 log: Process dump file    : /root/.pm2/dump.pm2
+2026-04-02T12:11:12: PM2 log: Concurrent actions   : 2
+2026-04-02T12:11:12: PM2 log: SIGTERM timeout      : 1600
+2026-04-02T12:11:12: PM2 log: ===============================================================================
+2026-04-02T12:11:12: PM2 error: Error: EINVAL: invalid argument, chmod '/root/.pm2/pub.sock'
+2026-04-02T12:11:12: PM2 error: Error: EINVAL: invalid argument, chmod '/root/.pm2/rpc.sock'
+RangeError: Map maximum size exceeded
+    at Map.set (<anonymous>)
+    at AsyncHook.init (node:domain:79:15)
+    at Pipe.emitInitNative (node:internal/async_hooks:202:43)
+    at createServerHandle (node:net:1851:14)
+    at Server.setupListenHandle [as _listen2] (node:net:1915:14)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2119:5)
+    at Server.<anonymous> (/app/manage/node_modules/pm2-axon/lib/sockets/sock.js:408:21)
+    at Server.emit (node:events:518:28)
+    at Server.emit (node:domain:489:12)

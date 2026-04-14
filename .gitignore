@@ -1,0 +1,31 @@
+
+# 屏蔽 mysql 下的所有文件
+mysql/
+
+# 屏蔽 nginx/logs 下的所有文件
+nginx/logs/
+
+# 屏蔽 redis 下的所有文件
+redis/
+
+logs/
+cache/
+npm-debug.log
+yarn-error.log
+node_modules/*
+package-lock.json
+yarn.lock
+coverage/
+dist/
+.idea/
+run/
+build/
+.DS_Store
+launch.json
+*.sw*
+*.un~
+.tsbuildinfo
+.tsbuildinfo.*
+data/*
+pnpm-lock.yaml
+public/uploads/*
